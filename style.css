@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    min-height: 80%;
+    border-radius: 14px;
+}
+.card{
+    display: flex;
+    max-width: 350px ;
+}
+.left-card{
+    background-color: hsl(31, 77%, 52%) ;
+    min-height: fit-content;
+    flex-direction: column;
+    padding: 4.5%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.middle-card{
+    background-color: hsl(184, 100%, 22%);
+    min-height: fit-content;
+    flex-direction: column;
+    padding: 4.5%;
+}
+.right-card{
+    background-color: hsl(179, 100%, 13%) ;
+    min-height: fit-content;
+    flex-direction: column;
+    padding: 4.5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div > img{
+    width: 25%;
+    height: 60%;
+}
+.heading{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%) ;
+    padding: 7.5% 0% 7.5% 0%;
+}
+div > span {
+    padding-bottom: 50%;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-family: 'Lexend Deca', sans-serif;;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%) ;
+    width: fit-content;
+    padding: 6%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.left-card > .btn{color: hsl(31, 77%, 52%);}
+.middle-card > .btn{color: hsl(184, 100%, 22%) ;}
+.right-card > .btn{color: hsl(179, 100%, 13%) ;}
+.btn:hover{
+    border: 2px solid white;
+    background-color: transparent ;
+    color: white;
+}
